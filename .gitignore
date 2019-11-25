@@ -104,5 +104,5 @@ venv.bak/
 .mypy_cache/
 
 .ask
-*vendor/**
+vendor/*
 !*alexa/data.py
