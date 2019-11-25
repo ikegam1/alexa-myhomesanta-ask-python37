@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "type": "SUBSCRIPTION",
+  "referenceName": "私のサンタクロースのプレミアム機能",
+  "subscriptionInformation": {
+    "subscriptionPaymentFrequency": "MONTHLY",
+    "subscriptionTrialPeriodDays": 7
+  },
+  "publishingInformation": {
+    "locales": {
+      "ja-JP": {
+        "name": "私のサンタクロースのプレミアム機能",
+        "summary": "私のサンタクローススキルの願い事数の制限を解除する機能",
+        "description": "私のサンタクローススキルはサンタとして一人が登録し、最大3つまでの願いごとを登録できるスキルです。この機能を購入する事によってその制限がなくなり、 願い事がいくつでも登録できるようになります。",
+        "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/1361/0b2434590c434e3b926f1f602c3887bc/APP_ICON?versionId=K7ray_mK2VAt6Jnn140tZeXbtCHD9K8E&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191121T140128Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20191121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2688f70cd4525b76ec3494ce6dcf274ecf56564ba44cfada3053d232ac357894",
+        "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/2e7c/f75effb70fa7440a943094f9138cdaed/APP_ICON_LARGE?versionId=sS5cyqKSZwdpmDQaViiY_Br0np.VcGmr&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191121T140128Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20191121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b8991c157bff3babea1fd0e455f49292366532b04e289415a1cb88c95066f04c",
+        "examplePhrases": [
+          "For Future Use – Example Phrase 1",
+          "For Future Use – Example Phrase 2",
+          "For Future Use – Example Phrase 3"
+        ],
+        "keywords": [
+          "For Future Use – Keywords"
+        ],
+        "customProductPrompts": {
+          "purchasePromptDescription": "私のサンタクロースのプレミアム機能は、願い事の数を制限を解除する機能です。",
+          "boughtCardDescription": "私のサンタクローススキルの願い事の数の制限を解除する機能"
+        }
+      }
+    },
+    "distributionCountries": [
+      "JP"
+    ],
+    "pricing": {
+      "amazon.co.jp": {
+        "releaseDate": "2019-11-15T00:00Z",
+        "defaultPriceListing": {
+          "price": 100,
+          "currency": "JPY"
+        }
+      }
+    },
+    "taxInformation": {
+      "category": "SOFTWARE"
+    }
+  },
+  "privacyAndCompliance": {
+    "locales": {
+      "ja-JP": {
+        "privacyPolicyUrl": "https://www.amazon.com"
+      }
+    }
+  },
+  "testingInstructions": "「プレミアム機能を購入」といい、商品を購入します。\n購入後は利用人数の制限がなくなるため、願い事が最大3つまでという制限がなくなります。\n購入後にスキルを開き、願い事を登録してください。\n購入のキャンセルは「プレミアム機能をキャンセル」、購入状況の確認は「有効なアイテムを教えて」と言ってください。\n",
+  "purchasableState": "PURCHASABLE"
+}

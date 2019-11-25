@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "ask-custom-my-home-santa-default",
+          "sourceDir": "lambda/py"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::person_id:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "locales": {
+        "ja-JP": {
+          "privacyPolicyUrl": "http://ikegami.tokyo/2019/11/21/my-home-santa-ppt/"
+        }
+      },
+      "allowsPurchases": true,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "name": "わたしのサンタクロース",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/b942/43453a3d8dc04d329a60951933310cd4/APP_ICON?versionId=XMJHCIJRKpECQY0S0S29N4Z6MqyISQNk&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191121T140107Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20191121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6a658af6c9d5e7de8c6173e6ec0a9c29f340fef4e637ad4b525c61a2203a15fa",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/ddb9/20e6ae73253e4e9fba157681fed760ad/APP_ICON_LARGE?versionId=eRIQWyAM2L9skfqBNVZQi6rb2mv9_dQ4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20191121T140107Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20191121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=57b02b5a3512b949eedf7c2e4a5e3c0a9ec7b615ae6b9776d3609455cbe479fc",
+          "summary": "サンタへ願い事を伝えるためのスキル",
+          "description": "最初にサンタとして使うユーザーを登録してください。\n次に願い事が登録されるとそれがサンタ（として登録した人）に届きます。\n\n※このスキルはパーソナライズ機能の有効かと音声プロフィールの登録が必須となります。\n\nサンタ以外の人：\n　・願い事を登録します。\nサンタ\n　・サンタ以外の人が登録した願い事を確認します。\n\n\n--\nスキルアイコンはいらすとやさまのものを使用させていただきました。\nhttps://www.irasutoya.com/",
+          "examplePhrases": [
+            "アレクサ、わたしのサンタクロースを開いて",
+            "願い事を聞いて",
+            "願い事を確認"
+          ],
+          "keywords": []
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "サンタ：\n0.アレクサアプリにて音声プロフィールを登録します。\n1. 「アレクサ、わたしのサンタクロースを開いて」\n2. (サンタかどうか聞かれるので)「サンタです」\n3. スキルを終了します。\n\nサンタ以外の人：\n\n1. 「アレクサ、わたしのサンタクロースを開いて」\n2. 「願い事をする」\n3.「焼きそばパン買ってきて」（←願い事）\n\nサンタ：\n4.「アレクサ、わたしのサンタクロースを開いて」\n5.「願い事を確認」\n\nプレミアム機能：\n1. 「プレミアム機能を購入」",
+      "category": "FRIENDS_AND_FAMILY",
+      "distributionCountries": []
+    }
+  }
+}

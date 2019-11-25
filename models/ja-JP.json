@@ -1,0 +1,307 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "私のサンタクロース",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "WishAddInIntent",
+                  "slots": [
+                      {
+                          "name": "wish",
+                          "type": "wish"
+                      },
+                      {
+                          "name": "query",
+                          "type": "AMAZON.SearchQuery",
+                          "samples": [
+                              "{query}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "サンタさんに {wish}",
+                      "サンタに {wish}",
+                      "サンタクロースに {wish}",
+                      "{wish} を聞いて",
+                      "{wish} を登録",
+                      "{wish} をする"
+                  ]
+              },
+              {
+                  "name": "WishListIntent",
+                  "slots": [
+                      {
+                          "name": "wish",
+                          "type": "wish"
+                      }
+                  ],
+                  "samples": [
+                      "{wish} を確認",
+                      "{wish} のリスト",
+                      "{wish} を見る",
+                      "{wish} を聞く",
+                      "{wish} を教えて"
+                  ]
+              },
+              {
+                  "name": "AnswerClassIntent",
+                  "slots": [
+                      {
+                          "name": "class",
+                          "type": "class"
+                      }
+                  ],
+                  "samples": [
+                      "{class}",
+                      "{class} です"
+                  ]
+              },
+              {
+                  "name": "PremiumInfoIntent",
+                  "slots": [
+                      {
+                          "name": "productName",
+                          "type": "productName"
+                      }
+                  ],
+                  "samples": [
+                      "私のサンタクロースの {productName}",
+                      "{productName} が知りたい",
+                      "{productName} について知りたい",
+                      "{productName} について教えて",
+                      "{productName} について",
+                      "{productName} を教えて"
+                  ]
+              },
+              {
+                  "name": "BuyIntent",
+                  "slots": [
+                      {
+                          "name": "productName",
+                          "type": "productName"
+                      }
+                  ],
+                  "samples": [
+                      "{productName} を使う",
+                      "{productName} を契約",
+                      "{productName} を買う",
+                      "{productName} を購入"
+                  ]
+              },
+              {
+                  "name": "ShoppingIntent",
+                  "slots": [],
+                  "samples": [
+                      "有効なアイテムを教えて",
+                      "何を買ったか教えて",
+                      "プレミアム機能は有効ですか"
+                  ]
+              },
+              {
+                  "name": "CancelSubscriptionIntent",
+                  "slots": [
+                      {
+                          "name": "productName",
+                          "type": "productName"
+                      }
+                  ],
+                  "samples": [
+                      "{productName} を返金",
+                      "{productName} を返品",
+                      "{productName} をキャンセル"
+                  ]
+              },
+              {
+                  "name": "AMAZON.YesIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NoIntent",
+                  "samples": []
+              },
+              {
+                  "name": "WishDeleteIntent",
+                  "slots": [
+                      {
+                          "name": "password",
+                          "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                      },
+                      {
+                          "name": "message_number",
+                          "type": "AMAZON.NUMBER"
+                      }
+                  ],
+                  "samples": [
+                      "{message_number} 番の願い事を削除",
+                      "{message_number} 番めの願い事を削除",
+                      "{password}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "wish",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "メッセージ"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "登録"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "お願い"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "伝言"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "願い事"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "class",
+                  "values": [
+                      {
+                          "id": "other",
+                          "name": {
+                              "value": "違う人",
+                              "synonyms": [
+                                  "その他",
+                                  "サンタじゃない"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "mom",
+                          "name": {
+                              "value": "ママ",
+                              "synonyms": [
+                                  "お母さん",
+                                  "母"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "child",
+                          "name": {
+                              "value": "パパじゃない",
+                              "synonyms": [
+                                  "子供",
+                                  "child",
+                                  "子"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "parent",
+                          "name": {
+                              "value": "サンタ",
+                              "synonyms": [
+                                  "サンタクロース",
+                                  "三太",
+                                  "サンダー",
+                                  "あんた"
+                              ]
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "productName",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "拡張機能"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "プレミアム"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "プレミアム機能"
+                          }
+                      }
+                  ]
+              }
+          ]
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "WishAddInIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "wish",
+                          "type": "wish",
+                          "confirmationRequired": false,
+                          "elicitationRequired": false,
+                          "prompts": {}
+                      },
+                      {
+                          "name": "query",
+                          "type": "AMAZON.SearchQuery",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1126814948751.481072926180"
+                          }
+                      }
+                  ]
+              }
+          ],
+          "delegationStrategy": "ALWAYS"
+      },
+      "prompts": [
+          {
+              "id": "Elicit.Slot.1126814948751.481072926180",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "願い事を言ってください。ではどうぞ。"
+                  }
+              ]
+          },
+          {
+              "id": "Elicit.Slot.620149472611.1187807639215",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "お名前を教えてください。"
+                  }
+              ]
+          }
+      ]
+  }
+}
